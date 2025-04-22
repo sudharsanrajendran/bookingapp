@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import '../../GlobalWidget/Custom_Headers.dart';
+import '../../Widget/Custom_Headers.dart';
+import '../../Widget/Draggablescroller.dart';
 import '../../utils/Constants/Const_Colors.dart';
-import '../homescreen/Widgets/Draggablescroller.dart';
 import 'CustomWidgets/AddressInputs.dart';
 import 'CustomWidgets/RecentAddressList.dart';
 

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../utils/Constants/Const_Colors.dart';
-import '../../SelectAddress/SelectAddresspage.dart';
+import '../pages/SelectAddress/SelectAddresspage.dart';
 class CustomdraggableScroller extends StatelessWidget {
   const CustomdraggableScroller({
     super.key, this.child, this.initialsize, this.minchildsize, this.maxchildsize,
@@ -33,15 +33,8 @@ final maxchildsize;
             controller: controller,
             child: Column(
               children: [
-                GestureDetector(
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (_) => const Selectaddresspage()),
-                    );
-                  },
-                  child: child
-                ),
+                 child
+
               ],
             ),
           ),

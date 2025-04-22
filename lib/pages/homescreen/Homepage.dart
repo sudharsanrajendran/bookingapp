@@ -1,9 +1,10 @@
-import 'package:bookingapp/Screens/SelectAddress/SelectAddresspage.dart';
+
 // Import the drawer
 import 'package:flutter/material.dart';
+import '../../Widget/Draggablescroller.dart';
 import '../../utils/Constants/Const_Colors.dart';
-import 'Widgets/CustomDrawer.dart';
-import 'Widgets/Draggablescroller.dart';
+import '../../Widget/CustomDrawer.dart';
+import '../SelectAddress/SelectAddresspage.dart';
 
 class Homepage extends StatefulWidget {
   const Homepage({super.key});
@@ -89,15 +90,24 @@ class _HomepageState extends State<Homepage> {
                     ),
                   ],
                 ),
-                child: Row(
-                  children: const [
-                    Icon(Icons.search, color: Colors.grey),
-                    SizedBox(width: 10),
-                    Text(
-                      "Search...",
-                      style: TextStyle(color: Colors.grey, fontSize: 16),
-                    ),
-                  ],
+                child: GestureDetector(
+                onTap: () {
+    Navigator.push(
+    context,
+    MaterialPageRoute(builder: (_) => Selectaddresspage()),
+    );
+    },
+
+                  child: Row(
+                    children: const [
+                      Icon(Icons.search, color: Colors.grey),
+                      SizedBox(width: 10),
+                      Text(
+                        "Search...",
+                        style: TextStyle(color: Colors.grey, fontSize: 16),
+                      ),
+                    ],
+                  ),
                 )
             ),
 
